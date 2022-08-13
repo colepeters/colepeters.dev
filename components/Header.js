@@ -20,7 +20,7 @@ export default function Header() {
         </Link>
       </Text>
       <Text fontSize={0} mt={1}>
-        Dispatches on design and engineering
+        Dispatches on engineering and design
       </Text>
     </Box>
   )
