@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 import Box from '../components/Box'
 import Text from '../components/Text'
-import { getPosts } from '../lib/api'
+import { getSortedPostsData } from '../lib/api'
 
 export default function Home({ posts }) {
   return (
@@ -31,7 +31,7 @@ export default function Home({ posts }) {
         </Text>
         {posts.map((post) => (
           <Box mb={4} key={post.slug}>
-            <Link href={post.slug}>
+            <Link href={`/posts/${post.slug}`}>
               <a style={{ textDecoration: 'none' }}>
                 <Text
                   as='h5'
@@ -58,7 +58,7 @@ export default function Home({ posts }) {
 }
 
 export function getStaticProps() {
-  const posts = getPosts()
+  const posts = getSortedPostsData()
 
   return {
     props: {
