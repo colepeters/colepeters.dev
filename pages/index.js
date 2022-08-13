@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Link from 'next/link'
 
 import Box from '../components/Box'
@@ -7,6 +8,13 @@ import { getPosts } from '../lib/api'
 export default function Home({ posts }) {
   return (
     <>
+      <Head>
+        <title>Cole Peters — frontend engineer</title>
+        <meta
+          name='description'
+          content='For the past 15 years, I’ve been working at the intersection of design and engineering, with an emphasis on design systems, user interfaces, and frontend architecture. This blog documents some of my experience in writing.'
+        />
+      </Head>
       <Box as='main' my={5}>
         <Text>
           Hi, I’m Cole,{' '}
