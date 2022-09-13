@@ -8,6 +8,10 @@ export default function PostWrapper({ title, date, description, children }) {
       <Head>
         <title>Cole Peters — {title}</title>
         <meta name='description' content={description} />
+        <meta property='og:title' content={title} />
+        <meta property='og:type' content='article' />
+        <meta property='og:description' content={description} />
+        <meta property='og:locale' content='en_CA' />
       </Head>
       <article>
         <Text as='h1' mb={[4, null, 5]}>
