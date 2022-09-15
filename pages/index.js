@@ -40,7 +40,7 @@ export default function Home({ posts }) {
             </a>{' '}
             or{' '}
             <a href='https://colepeters.com/contact'>
-              or send me an email via colepeters.dom
+              or send me an email via colepeters.com
             </a>
             .
           </em>
