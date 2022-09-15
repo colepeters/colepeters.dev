@@ -1,5 +1,6 @@
 import Head from 'next/head'
 
+import HireMe from './HireMe'
 import Text from './Text'
 
 export default function PostWrapper({ title, date, description, children }) {
@@ -22,6 +23,7 @@ export default function PostWrapper({ title, date, description, children }) {
         </Text>
         {children}
       </article>
+      <HireMe />
     </>
   )
 }
