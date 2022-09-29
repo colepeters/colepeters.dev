@@ -11,21 +11,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: IBM Plex Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     font-size: ${(props) => props.theme.fontSizes[1]};
     line-height: ${(props) => props.theme.lineHeights.body};
-    padding: ${(props) => props.theme.space[3]};
-  }
-
-  @media screen and (min-width: ${(props) => props.theme.breakpoints[1]}) {
-    body {
-      padding: ${(props) => props.theme.space[4]} ${(props) =>
-  props.theme.space[5]};
-    }
-  }
-
-  @media screen and (min-width: ${(props) => props.theme.breakpoints[3]}) {
-    body {
-      padding: ${(props) => props.theme.space[5]} ${(props) =>
-  props.theme.space[6]};
-    }
+    padding: clamp(1rem, 4vw, 4rem) clamp(1rem, 8vw, 8rem)
   }
 
   h1 { font-size: ${(props) => props.theme.fontSizes[6]}; }
