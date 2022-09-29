@@ -14,8 +14,10 @@ const GlobalStyle = createGlobalStyle`
     padding: 1rem;
   }
 
-  @media screen and (min-width ${(props) => props.theme.breakpoints[1]}) {
-    padding: clamp(1rem, 4vw, 4rem) clamp(1rem, 8vw, 8rem)
+  @media screen and (min-width: ${(props) => props.theme.breakpoints[1]}) {
+    body {
+      padding: clamp(1rem, 4vw, 4rem) clamp(1rem, 8vw, 8rem);
+    }
   }
 
   h1 { font-size: ${(props) => props.theme.fontSizes[6]}; }
