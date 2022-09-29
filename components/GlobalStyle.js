@@ -115,11 +115,6 @@ const GlobalStyle = createGlobalStyle`
   a {
     color: ${(props) => props.theme.colors.body};
     cursor: pointer;
-    transition: color 0.15s linear;
-
-    &:hover, &:focus {
-      color: ${(props) => props.theme.colors.primary};
-    }
   }
 
   strong {
@@ -129,7 +124,6 @@ const GlobalStyle = createGlobalStyle`
   code {
     font-family: IBM Plex Mono, monospace;
     font-weight: 400;
-    color: ${(props) => props.theme.colors.primary};
   }
 
   figcaption {
