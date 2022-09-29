@@ -34,6 +34,7 @@ const GlobalStyle = createGlobalStyle`
 
   @media screen and (min-width: ${(props) => props.theme.breakpoints[2]}) {
     h1 {
+      letter-spacing: -0.05em;
       margin-top: ${(props) => props.theme.space[5]};
       margin-bottom: ${(props) => props.theme.space[6]};
     }
