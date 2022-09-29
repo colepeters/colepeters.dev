@@ -11,6 +11,10 @@ const GlobalStyle = createGlobalStyle`
     font-family: IBM Plex Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     font-size: ${(props) => props.theme.fontSizes[1]};
     line-height: ${(props) => props.theme.lineHeights.body};
+    padding: 1rem;
+  }
+
+  @media screen and (min-width ${(props) => props.theme.breakpoints[1]}) {
     padding: clamp(1rem, 4vw, 4rem) clamp(1rem, 8vw, 8rem)
   }
 
