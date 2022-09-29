@@ -59,7 +59,7 @@ export default function Home({ posts }) {
                   fontWeight={600}
                   mt={0}
                   mb={3}
-                  style={{ textDecoration: 'underline', maxWidth: 'none' }}
+                  style={{ maxWidth: 'none', letterSpacing: '-0.025em' }}
                 >
                   {post.title}
                 </Text>
