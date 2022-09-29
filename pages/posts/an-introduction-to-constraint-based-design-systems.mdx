@@ -105,7 +105,7 @@ The idea behind spacing scales is this: any (and every) given layout should use 
       style={{ width: '100%', maxWidth: 640, height: 'auto', display: 'block' }}
     />
   </Box>
-  <Text as='figcaption' fontSize={1} fontStyle='italic' mt={1}>
+  <Text as='figcaption' mt={1}>
     A rough sketch of a spacing scale and its use in a component and page layout
   </Text>
 </Box>
@@ -159,7 +159,7 @@ First, a quick recap of terminology: when describing three dimensional objects, 
       style={{ width: '100%', maxWidth: 640, height: 'auto', display: 'block' }}
     />
   </Box>
-  <Text as='figcaption' fontSize={1} fontStyle='italic' mt={1}>
+  <Text as='figcaption' fontSize={0} fontStyle='italic' mt={1}>
     Differences in the rate of change between a cube’s surface area and volume
   </Text>
 </Box>
@@ -202,11 +202,11 @@ Now, let’s consider a colour palette — say, the most minimal of colour palet
       gridGap={2}
       p={[2, 3]}
     >
-      <Text as='ol' role='cell' my={0} pl={0} fontSize={1}>
+      <Text as='ol' role='cell' my={0} pl={0} fontSize={0}>
         <Text as='li'>white</Text>
         <Text as='li'>black</Text>
       </Text>
-      <Text as='ol' role='cell' my={0} pl={0} fontSize={1}>
+      <Text as='ol' role='cell' my={0} pl={0} fontSize={0}>
         <Text as='li'>white/black</Text>
         <Text as='li'>black/white</Text>
       </Text>
@@ -252,12 +252,12 @@ What happens if we add a third colour, say, red? How many colour combinations ca
       gridGap={2}
       p={[2, 3]}
     >
-      <Text as='ol' role='cell' my={0} pl={0} fontSize={1}>
+      <Text as='ol' role='cell' my={0} pl={0} fontSize={0}>
         <Text as='li'>white</Text>
         <Text as='li'>black</Text>
         <Text as='li'>red</Text>
       </Text>
-      <Text as='ol' role='cell' my={0} pl={0} fontSize={1}>
+      <Text as='ol' role='cell' my={0} pl={0} fontSize={0}>
         <Text as='li'>white/black/red</Text>
         <Text as='li'>white/red/black</Text>
         <Text as='li'>black/red/white</Text>

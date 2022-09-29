@@ -9,6 +9,7 @@ const GlobalStyle = createGlobalStyle`
     background: ${(props) => props.theme.colors.background};
     color: ${(props) => props.theme.colors.body};
     font-family: IBM Plex Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-size: ${(props) => props.theme.fontSizes[1]};
     line-height: ${(props) => props.theme.lineHeights.body};
     padding: ${(props) => props.theme.space[3]};
   }
@@ -27,16 +28,28 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
+  h1 { font-size: ${(props) => props.theme.fontSizes[6]}; }
+  h2 { font-size: ${(props) => props.theme.fontSizes[4]}; }
+  h3 { font-size: ${(props) => props.theme.fontSizes[3]}; }
+  h4 { font-size: ${(props) => props.theme.fontSizes[2]}; }
+  h5, h6 { font-size: ${(props) => props.theme.fontSizes[1]}; }
+
   h1, h2, h3, h4, h5, h6 {
     line-height: ${(props) => props.theme.lineHeights.heading};
+    letter-spacing: ${(props) => props.theme.letterSpacings.tight};
+    max-width: 32ch;
   }
 
   h1 {
-    font-size: ${(props) => props.theme.fontSizes[4]};
     margin-top: ${(props) => props.theme.space[4]};
     margin-bottom: ${(props) => props.theme.space[5]};
-    letter-spacing: ${(props) => props.theme.letterSpacings.tight};
-    max-width: 26ch;
+  }
+
+  @media screen and (min-width: ${(props) => props.theme.breakpoints[2]}) {
+    h1 {
+      margin-top: ${(props) => props.theme.space[5]};
+      margin-bottom: ${(props) => props.theme.space[6]};
+    }
   }
 
   h2, h3, h4, h5, h6 {
@@ -44,25 +57,27 @@ const GlobalStyle = createGlobalStyle`
     margin-bottom: ${(props) => props.theme.space[3]};
   }
 
-  h2 {
-    font-size: ${(props) => props.theme.fontSizes[3]};
-    letter-spacing: ${(props) => props.theme.letterSpacings.tight};
-    max-width: 26ch;
-  }
-
-  h3, h4, h5, h6 {
-    font-size: ${(props) => props.theme.fontSizes[2]};
-    max-width: 72ch;
+  @media screen and (min-width: ${(props) => props.theme.breakpoints[1]}) {
+    h2, h3, h4, h5, h6 {
+      margin-top: ${(props) => props.theme.space[5]};
+      margin-bottom: ${(props) => props.theme.space[4]};
+    }
   }
 
   blockquote {
     border-left: 0.5rem double ${(props) => props.theme.colors.darkBackground};
-    font-size: ${(props) => props.theme.fontSizes[2]};
     margin: ${(props) => props.theme.space[4]} 0;
     padding: 0 ${(props) => props.theme.space[3]};
+    font-size: ${(props) => props.theme.fontSizes[2]};
 
     & p {
       margin: 0;
+    }
+  }
+
+  @media screen and (min-width: ${(props) => props.theme.breakpoints[1]}) {
+    blockquote {
+      margin: ${(props) => props.theme.space[5]} 0;
     }
   }
 
@@ -130,41 +145,13 @@ const GlobalStyle = createGlobalStyle`
     color: ${(props) => props.theme.colors.primary};
   }
 
+  figcaption {
+    font-size: ${(props) => props.theme.fontSizes[0]};
+    font-style: italic;
+  }
+
   ::selection {
     background-color: rgba(20,15,0,0.25);
-  }
-
-  @media screen and (min-width: ${(props) => props.theme.breakpoints[1]}) {
-    html { font-size: 112.5%; }
-
-    h2, h3, h4, h5, h6 {
-      margin-top: ${(props) => props.theme.space[5]};
-      margin-bottom: ${(props) => props.theme.space[4]};
-    }
-
-    h1 { font-size: ${(props) => props.theme.fontSizes[6]}; }
-    h2 { font-size: ${(props) => props.theme.fontSizes[5]}; }
-
-    h3 {
-      font-size: ${(props) => props.theme.fontSizes[4]};
-      letter-spacing: ${(props) => props.theme.letterSpacings.tight};
-      max-width: 32ch;
-    }
-
-    h4, h5, h6 { font-size: ${(props) => props.theme.fontSizes[3]}; }
-    blockquote {
-      font-size: ${(props) => props.theme.fontSizes[3]};
-    }
-  }
-
-  @media screen and (min-width: ${(props) => props.theme.breakpoints[2]}) {
-    html { font-size: 125%; }
-    h1 {
-      font-size: ${(props) => props.theme.fontSizes[7]};
-      margin-top: ${(props) => props.theme.space[5]};
-      margin-bottom: ${(props) => props.theme.space[6]};
-      max-width: 20ch;
-    }
   }
 
 `

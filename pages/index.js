@@ -47,7 +47,7 @@ export default function Home({ posts }) {
         </Text>
       </Box>
       <Box as='section' my={5}>
-        <Text as='h4' mt={0} mb={4}>
+        <Text as='h3' mt={0} mb={4}>
           Articles
         </Text>
         {posts.map((post) => (
@@ -55,19 +55,16 @@ export default function Home({ posts }) {
             <Link href={post.slug}>
               <a style={{ textDecoration: 'none' }}>
                 <Text
-                  as='h5'
-                  fontSize={2}
+                  as='h4'
+                  fontWeight={600}
                   mt={0}
-                  mb={2}
-                  style={{ textDecoration: 'underline' }}
+                  mb={3}
+                  style={{ textDecoration: 'underline', maxWidth: 'none' }}
                 >
                   {post.title}
                 </Text>
-                <Text fontSize={1} fontWeight='semibold'>
-                  {post.date}
-                </Text>
-                <Text fontSize={1} mt={2}>
-                  ‘{post.excerpt}’ &rarr;
+                <Text mt={2}>
+                  <Text as='span'>‘{post.excerpt}’ &rarr;</Text>
                 </Text>
               </a>
             </Link>
