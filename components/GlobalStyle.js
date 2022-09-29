@@ -38,6 +38,7 @@ const GlobalStyle = createGlobalStyle`
     line-height: ${(props) => props.theme.lineHeights.heading};
     letter-spacing: ${(props) => props.theme.letterSpacings.tight};
     max-width: 32ch;
+    font-weight: ${(props) => props.theme.fontWeights.semibold};
   }
 
   h1 {
