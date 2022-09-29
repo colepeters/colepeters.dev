@@ -19,7 +19,7 @@ export default function Home({ posts }) {
         <Text>
           Hi, I’m Cole,{' '}
           <a href='https://colepeters.com'>a multidisciplinary artist</a>, and a
-          frontend engineer by trade.
+          design engineer by trade.
         </Text>
         <Text>
           For the past 15 years, I’ve been working at the intersection of design
@@ -32,18 +32,6 @@ export default function Home({ posts }) {
           <a href='https://github.com/colepeters'>GitHub</a>,{' '}
           <a href='https://twitter.com/tiltedspheres'>Twitter</a>, and{' '}
           <a href='https://linkedin.com/in/tcptrs'>LinkedIn</a>.{' '}
-          <em>
-            (Psst: Looking to add a frontend engineer with deep design expertise
-            to your team? I’m open for work!{' '}
-            <a href='/cole-peters-cv.pdf' target='_blank'>
-              Check out my CV
-            </a>{' '}
-            or{' '}
-            <a href='https://colepeters.com/contact'>
-              or send me an email via colepeters.com
-            </a>
-            .
-          </em>
         </Text>
       </Box>
       <Box as='section' my={5}>
