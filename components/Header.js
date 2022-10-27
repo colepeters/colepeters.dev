@@ -11,8 +11,8 @@ export default function Header() {
           <Text
             as='a'
             color='body'
-            fontFamily='monospace'
-            fontWeight='normal'
+            fontFamily='body'
+            fontWeight='bold'
             style={{ textDecoration: 'underline' }}
           >
             colepeters.dev

@@ -1,15 +1,34 @@
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
+  @font-face {
+    font-family: 'Cabinet';
+    src: url('/fonts/CabinetGrotesk-Variable.woff2') format('woff2-variations');
+    font-weight: 100 900;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Sporting';
+    src: url('/fonts/Sporting_Grotesque-Regular_web.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+  }
+
   * {
     box-sizing: border-box;
+  }
+
+  html {
+    font-size: 17px;
   }
 
   body {
     background: ${(props) => props.theme.colors.background};
     color: ${(props) => props.theme.colors.body};
-    font-family: IBM Plex Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: Cabinet, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     font-size: ${(props) => props.theme.fontSizes[1]};
+    font-weight: 450;
     line-height: ${(props) => props.theme.lineHeights.body};
     padding: 1rem;
   }
@@ -27,10 +46,11 @@ const GlobalStyle = createGlobalStyle`
   h5, h6 { font-size: ${(props) => props.theme.fontSizes[1]}; }
 
   h1, h2, h3, h4, h5, h6 {
+    font-family: Sporting;
     line-height: ${(props) => props.theme.lineHeights.heading};
     letter-spacing: ${(props) => props.theme.letterSpacings.tight};
     max-width: 32ch;
-    font-weight: ${(props) => props.theme.fontWeights.semibold};
+    font-weight: 400;
   }
 
   h1 {
@@ -40,7 +60,7 @@ const GlobalStyle = createGlobalStyle`
 
   @media screen and (min-width: ${(props) => props.theme.breakpoints[2]}) {
     h1 {
-      letter-spacing: -0.05em;
+    letter-spacing: ${(props) => props.theme.letterSpacings.vtight};
       margin-top: ${(props) => props.theme.space[5]};
       margin-bottom: ${(props) => props.theme.space[6]};
     }
@@ -63,6 +83,7 @@ const GlobalStyle = createGlobalStyle`
     margin: ${(props) => props.theme.space[4]} 0;
     padding: 0 ${(props) => props.theme.space[3]};
     font-size: ${(props) => props.theme.fontSizes[2]};
+    font-weight: 600;
 
     & p {
       margin: 0;
@@ -108,7 +129,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   p, li, blockquote {
-    max-width: 72ch;
+    max-width: 58ch;
   }
 
   p {

@@ -9,7 +9,7 @@ export default function Home({ posts }) {
   return (
     <>
       <Head>
-        <title>Cole Peters — frontend engineer</title>
+        <title>Cole Peters — design engineer</title>
         <meta
           name='description'
           content='For the past 15 years, I’ve been working at the intersection of design and engineering, with an emphasis on design systems, user interfaces, and frontend architecture. This blog documents some of my experience in writing.'
@@ -44,7 +44,8 @@ export default function Home({ posts }) {
               <a style={{ textDecoration: 'none' }}>
                 <Text
                   as='h4'
-                  fontWeight={600}
+                  fontWeight='bold'
+                  fontFamily='body'
                   mt={0}
                   mb={3}
                   style={{ maxWidth: 'none', letterSpacing: '-0.025em' }}
