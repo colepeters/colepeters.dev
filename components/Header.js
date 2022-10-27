@@ -6,7 +6,13 @@ import Text from './Text'
 export default function Header() {
   return (
     <Box as='nav'>
-      <Text as='h1' fontSize={1} my={0} mx='auto' letterSpacing='normal'>
+      <Text
+        as='h1'
+        fontSize={1}
+        my={0}
+        mx={[0, null, 'auto']}
+        letterSpacing='normal'
+      >
         <Link href='/'>
           <Text
             as='a'
@@ -19,7 +25,7 @@ export default function Header() {
           </Text>
         </Link>
       </Text>
-      <Text fontSize={0} mt={1} textAlign='center'>
+      <Text fontSize={0} mt={1} textAlign={['left', null, 'center']}>
         Dispatches on engineering and design
       </Text>
     </Box>
