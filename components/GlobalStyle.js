@@ -1,5 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
 
+const system = `-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif`
+
 const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: 'Cabinet';
@@ -22,7 +24,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     background: ${(props) => props.theme.colors.background};
     color: ${(props) => props.theme.colors.body};
-    font-family: Cabinet, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: Cabinet, ${system};
     font-size: ${(props) => props.theme.fontSizes[1]};
     font-weight: 450;
     line-height: ${(props) => props.theme.lineHeights.body};
@@ -46,7 +48,7 @@ const GlobalStyle = createGlobalStyle`
   h5, h6 { font-size: ${(props) => props.theme.fontSizes[1]}; }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: Sporting;
+    font-family: Sporting, ${system};
     line-height: ${(props) => props.theme.lineHeights.heading};
     letter-spacing: ${(props) => props.theme.letterSpacings.tight};
     max-width: 32ch;
