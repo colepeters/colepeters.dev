@@ -19,9 +19,17 @@ export default function Footer() {
         <Link href='/'>Return to the homepage?</Link>
       </Text>
       <Text fontSize={0}>
-        Psst… this work is licensed under a{' '}
+        This work is licensed under a{' '}
         <a href='https://creativecommons.org/licenses/by-nc-sa/4.0/'>
           Creative Commons BY-NC-SA 4.0 International License
+        </a>
+        , and is typeset in{' '}
+        <a href='https://velvetyne.fr/fonts/sporting-grotesque/'>
+          Sporting Grotesque
+        </a>{' '}
+        and{' '}
+        <a href='https://www.fontshare.com/fonts/cabinet-grotesk'>
+          Cabinet Grotesk
         </a>
         .
       </Text>

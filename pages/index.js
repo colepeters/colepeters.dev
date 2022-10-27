@@ -48,7 +48,7 @@ export default function Home({ posts }) {
                   fontFamily='body'
                   mt={0}
                   mb={3}
-                  style={{ maxWidth: 'none', letterSpacing: '-0.025em' }}
+                  style={{ maxWidth: 'none', letterSpacing: '-0.0125em' }}
                 >
                   {post.title}
                 </Text>
