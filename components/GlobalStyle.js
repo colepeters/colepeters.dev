@@ -19,10 +19,6 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  html {
-    font-size: 17px;
-  }
-
   body {
     background: ${(props) => props.theme.colors.background};
     color: ${(props) => props.theme.colors.body};
