@@ -15,7 +15,7 @@ export default function Home({ posts }) {
           content='For the past 15 years, I’ve been working at the intersection of design and engineering, with an emphasis on design systems, user interfaces, and frontend architecture. This blog documents some of my experience in writing.'
         />
       </Head>
-      <Box as='main' my={5}>
+      <Box as='main' my={5} mx='auto'>
         <Text>
           Hi, I’m Cole,{' '}
           <a href='https://colepeters.com'>a multidisciplinary artist</a>, and a
@@ -35,7 +35,7 @@ export default function Home({ posts }) {
         </Text>
       </Box>
       <Box as='section' my={5}>
-        <Text as='h3' mt={0} mb={4}>
+        <Text as='h3' mt={0} mb={4} textAlign='left'>
           Articles
         </Text>
         {posts.map((post) => (
@@ -48,6 +48,7 @@ export default function Home({ posts }) {
                   fontFamily='body'
                   mt={0}
                   mb={3}
+                  textAlign='left'
                   style={{ maxWidth: 'none', letterSpacing: '-0.0125em' }}
                 >
                   {post.title}

@@ -26,7 +26,7 @@ const GlobalStyle = createGlobalStyle`
     color: ${(props) => props.theme.colors.body};
     font-family: Cabinet, ${system};
     font-size: ${(props) => props.theme.fontSizes[1]};
-    font-weight: 450;
+    font-weight: 420;
     line-height: ${(props) => props.theme.lineHeights.body};
     padding: 1rem;
   }
@@ -38,7 +38,16 @@ const GlobalStyle = createGlobalStyle`
 
     p, li, blockquote {
       max-width: 58ch;
+      margin-left: auto;
+      margin-right: auto;
     }
+
+    h1, h2, h3, h4, h5, h6 {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
   }
 
   h1 { font-size: ${(props) => props.theme.fontSizes[6]}; }
@@ -62,7 +71,7 @@ const GlobalStyle = createGlobalStyle`
 
   @media screen and (min-width: ${(props) => props.theme.breakpoints[2]}) {
     h1 {
-    letter-spacing: ${(props) => props.theme.letterSpacings.vtight};
+      letter-spacing: ${(props) => props.theme.letterSpacings.vtight};
       margin-top: ${(props) => props.theme.space[5]};
       margin-bottom: ${(props) => props.theme.space[6]};
     }
@@ -82,10 +91,11 @@ const GlobalStyle = createGlobalStyle`
 
   blockquote {
     border-left: 0.5rem double ${(props) => props.theme.colors.darkBackground};
+    background: white;
     margin: ${(props) => props.theme.space[4]} 0;
-    padding: 0 ${(props) => props.theme.space[3]};
+    padding: ${(props) => props.theme.space[3]};
     font-size: ${(props) => props.theme.fontSizes[2]};
-    font-weight: 600;
+    font-weight: 360;
 
     & p {
       margin: 0;
@@ -94,7 +104,8 @@ const GlobalStyle = createGlobalStyle`
 
   @media screen and (min-width: ${(props) => props.theme.breakpoints[1]}) {
     blockquote {
-      margin: ${(props) => props.theme.space[5]} 0;
+      margin: ${(props) => props.theme.space[5]} auto;
+      padding: ${(props) => props.theme.space[4]};
     }
   }
 
@@ -131,7 +142,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   p {
-    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
   }
 
   p + p {

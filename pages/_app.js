@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <Box maxWidth='max-content'>
+      <Box maxWidth='max-content' mx='auto'>
         <Header />
         <Component {...pageProps} />
       </Box>

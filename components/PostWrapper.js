@@ -17,7 +17,7 @@ export default function PostWrapper({ title, date, description, children }) {
         <Text as='h1' mb={[4, null, 5]}>
           {title}
         </Text>
-        <Text fontWeight='semibold'>
+        <Text fontWeight='semibold' textAlign='center'>
           <time dateTime={date}>{date.replaceAll('-', '/')}</time>
         </Text>
         {children}

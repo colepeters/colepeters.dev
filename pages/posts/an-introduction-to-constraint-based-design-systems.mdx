@@ -93,19 +93,20 @@ Of course you would. Let’s talk about spacing scales.
 
 The idea behind spacing scales is this: any (and every) given layout should use only certain, consistent increments of space between discrete elements in that layout. Need an input to be some distance away from its label? Pick a value from the spacing scale. Designing a grid layout? The gutters between each column and row are sized with a value from the spacing scale, too. Every element of your UI, with rare exception, should be spaced apart from other elements by an interval of space found on your spacing scale.
 
-<Box as='figure' my={4} mx={0}>
+<Box as='figure' my={4} mx='auto' mx={0}>
   <Box
     borderWidth={2}
     borderStyle='solid'
     borderColor='darkBackground'
     maxWidth='max-content'
+    mx='auto'
   >
     <Image
       src={spacingScale}
       style={{ width: '100%', maxWidth: 640, height: 'auto', display: 'block' }}
     />
   </Box>
-  <Text as='figcaption' mt={1}>
+  <Text as='figcaption' mt={1} textAlign='center'>
     A rough sketch of a spacing scale and its use in a component and page layout
   </Text>
 </Box>
@@ -153,13 +154,14 @@ First, a quick recap of terminology: when describing three dimensional objects, 
     borderStyle='solid'
     borderColor='darkBackground'
     maxWidth='max-content'
+    mx='auto'
   >
     <Image
       src={cube}
       style={{ width: '100%', maxWidth: 640, height: 'auto', display: 'block' }}
     />
   </Box>
-  <Text as='figcaption' fontSize={0} fontStyle='italic' mt={1}>
+  <Text as='figcaption' fontSize={0} fontStyle='italic' mt={1} textAlign='center'>
     Differences in the rate of change between a cube’s surface area and volume
   </Text>
 </Box>
@@ -170,6 +172,7 @@ Now, let’s consider a colour palette — say, the most minimal of colour palet
   role='table'
   bg='white'
   my={[3, 4]}
+  mx='auto'
   borderWidth='2px'
   borderStyle='solid'
   borderColor='darkBackground'
@@ -224,6 +227,7 @@ What happens if we add a third colour, say, red? How many colour combinations ca
   borderStyle='solid'
   borderColor='darkBackground'
   my={[3, 4]}
+  mx='auto'
   maxWidth='max-content'
 >
   <Box role='rowgroup'>

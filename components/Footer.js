@@ -12,6 +12,7 @@ export default function Footer() {
       borderTopWidth='2px'
       borderTopStyle='solid'
       borderTopColor='darkBackground'
+      style={{ textAlign: 'center' }}
     >
       <Text fontSize={0}>
         You’ve reached the end of this page. Thanks for reading!
