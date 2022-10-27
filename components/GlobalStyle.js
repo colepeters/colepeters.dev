@@ -37,6 +37,10 @@ const GlobalStyle = createGlobalStyle`
     body {
       padding: clamp(1rem, 4vw, 4rem) clamp(1rem, 8vw, 8rem);
     }
+
+    p, li, blockquote {
+      max-width: 58ch;
+    }
   }
 
   h1 { font-size: ${(props) => props.theme.fontSizes[6]}; }
@@ -126,10 +130,6 @@ const GlobalStyle = createGlobalStyle`
     display: inline-block;
     width: 1.5em;
     opacity: 0.666;
-  }
-
-  p, li, blockquote {
-    max-width: 58ch;
   }
 
   p {
