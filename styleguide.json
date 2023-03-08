@@ -1,0 +1,10 @@
+{
+  "base": 16,
+  "fonts": {
+      "sans": "Authentic Sans, sans-serif"
+  },
+  "color": {
+      "dark": "hsl(226deg 16% 30%)",
+      "light": "hsl(30deg 14% 98%)"
+  }
+}
