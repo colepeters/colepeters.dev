@@ -30,7 +30,7 @@ export default function Home({ posts }) {
         <Text>
           You can also find me on{' '}
           <a href='https://github.com/colepeters'>GitHub</a>,{' '}
-          <a href='https://twitter.com/tiltedspheres'>Twitter</a>, and{' '}
+          <a href='https://mastodon.online/@colepeters'>Mastodon</a>, and{' '}
           <a href='https://linkedin.com/in/tcptrs'>LinkedIn</a>.{' '}
         </Text>
       </Box>
