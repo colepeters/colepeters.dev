@@ -7,14 +7,12 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Cabinet';
     src: url('/fonts/CabinetGrotesk-Variable.woff2') format('woff2-variations');
     font-weight: 100 900;
-    font-display: swap;
   }
 
   @font-face {
     font-family: 'Sporting';
     src: url('/fonts/Sporting_Grotesque-Regular_web.woff2') format('woff2');
     font-weight: 400;
-    font-display: swap;
   }
 
   * {
