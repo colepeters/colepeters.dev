@@ -4,6 +4,20 @@ import remarkGFM from 'remark-gfm'
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  redirects() {
+    return [
+      {
+        source: '/posts/:path*',
+        destination: 'https://normalflow.pub/posts/:path*',
+        permanent: true
+      },
+      {
+        source: '/',
+        destination: 'https://normalflow.pub',
+        permanent: true,
+      },
+    ]
+  },
   compiler: {
     styledComponents: true,
   },
